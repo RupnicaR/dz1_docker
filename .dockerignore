@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.git/
+.venv/
+*.md
+run.sh
+run.sh
