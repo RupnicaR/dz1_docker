@@ -14,7 +14,7 @@ from urllib.parse import unquote, urlparse
 from flask import Flask, jsonify, request
 
 # ↓↓↓ заполните своими данными ↓↓↓
-STUDENT = "Красильников Юлия"
+STUDENT = "Красильников А.В."
 GROUP = "БИСТ-23-ПО-3"
 MARKER_DEFAULT = "sitelab"
 # ↑↑↑ заполните своими данными ↑↑↑

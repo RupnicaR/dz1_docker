@@ -9,7 +9,7 @@ MARKER="sitelab"
 DATABASE_URL="postgresql://postgres:lab@host.docker.internal:${DB_PORT}/lab"
 
 docker rm -f "${PREFIX}-web" "${PREFIX}-db" >/dev/null 2>&1 || true
-docker build --build-arg VERSION=2.0 -t "${PREFIX}/probe:2.0" .
+docker build --no-cache --build-arg VERSION=2.0 -t "${PREFIX}/probe:2.0" .
 docker volume create "${PREFIX}-data" >/dev/null
 
 docker run -d --name "${PREFIX}-db" \
